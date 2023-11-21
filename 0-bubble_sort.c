@@ -11,17 +11,17 @@ void bubble_sort(int *array, size_t size)
 	int current;
 	size_t w, n;
 
-	if (!array || !size)
+	if (!array || !size) /*check array & size are existing*/
 	{
 		return;
 	}
 
 	w = 0;
-	while (w < size)
+	while (w < size) /* loop over the size */
 	{
-		for (n = 0; n < size - 1; n++)
+		for (n = 0; n < size - 1; n++) /* loop over the elements */
 		{
-			if (array[n] > array[n + 1])
+			if (array[n] > array[n + 1]) /*comparison*/
 			{
 				current = array[n];
 				array[n] = array[n + 1];
